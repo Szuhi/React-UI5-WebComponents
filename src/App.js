@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <ui5-title level="H2">UI5 Web Components, React demo application</ui5-title>
+        <ui5-title level="H2">UI5 Web Components, React demo application.</ui5-title>
       </div>
       <div className="Content">
         <ui5-label>This is a UI5 Button</ui5-label><br /><br />
