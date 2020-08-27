@@ -8,6 +8,8 @@ import "@ui5/webcomponents/dist/TreeItem.js";
 function App() {
   return (
     <div className="App">
+      <p>This is a UI5 Button</p>
+      <ui5-button>Hello world!</ui5-button>
 
       <p>This is a UI5 Tree</p>
       <ui5-tree id="myTree" class="full-width">
@@ -33,9 +35,6 @@ function App() {
         <ui5-tree-item expanded text="Tree 3 (no icon)">
         </ui5-tree-item>
       </ui5-tree>
-
-      <p>This is a UI5 Button</p>
-      <ui5-button>Hello world!</ui5-button>
     </div>
   );
 }
