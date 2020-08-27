@@ -4,14 +4,16 @@ import './App.css';
 import "@ui5/webcomponents/dist/Button";
 import "@ui5/webcomponents/dist/Tree.js";
 import "@ui5/webcomponents/dist/TreeItem.js";
+import "@ui5/webcomponents/dist/Label";
 
 function App() {
   return (
     <div className="App">
-      <p>This is a UI5 Button</p>
-      <ui5-button>Hello world!</ui5-button>
 
-      <p>This is a UI5 Tree</p>
+      <ui5-label>This is a UI5 Button</ui5-label><br /><br />
+      <ui5-button>Hello world!</ui5-button><br />
+      <br />
+      <ui5-label>This is a UI5 Tree</ui5-label><br /><br />
       <ui5-tree id="myTree" class="full-width">
         <ui5-tree-item expanded text="Tree 1" icon="paste" selected>
           <ui5-tree-item expanded text="Tree 1.1" selected>
