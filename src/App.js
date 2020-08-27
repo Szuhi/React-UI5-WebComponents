@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import "@ui5/webcomponents/dist/Button";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        <p>This is a UI5 Element</p>
+        <ui5-button>Hello world!</ui5-button>
       </header>
     </div>
   );
