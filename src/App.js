@@ -10,9 +10,11 @@ import "@ui5/webcomponents/dist/Toast";
 
 class App extends Component {
   buttonClick = () => {
-//    render() {
-//      return <ui5-toast id="wcToastBasic">This is a toast</ui5-toast>;
-//    }
+    console.log("Button clicked");
+    const toast = document.getElementById('wcToastBasic');
+    console.log("DOM element found");
+    console.log(toast);
+    toast.show();
   }
 
   render () {
@@ -23,7 +25,7 @@ class App extends Component {
         </div>
         <div className="Content">
           <ui5-label>This is a UI5 Button</ui5-label><br /><br />
-          <ui5-button click={this.buttonClick}>Hello world!</ui5-button><br />
+          <ui5-button click={() => this.buttonClick}>Hello!</ui5-button><br />
           <br />
           <ui5-label>This is a UI5 Tree</ui5-label><br /><br />
           <ui5-tree id="myTree" class="full-width">
@@ -49,6 +51,8 @@ class App extends Component {
             <ui5-tree-item expanded text="Tree 3 (no icon)">
             </ui5-tree-item>
           </ui5-tree>
+
+          <ui5-toast id="wcToastBasic">This is a toast</ui5-toast>
         </div>
       </div>
     );
