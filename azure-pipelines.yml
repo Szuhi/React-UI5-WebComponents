@@ -20,6 +20,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    mkdir $(uiSource)
     pushd $(uiSource)
     npm install
     npm run build
