@@ -37,7 +37,7 @@ class App extends Component {
         </div>
         <div className="Content">
           <ui5-label>This is a UI5 Button</ui5-label><br /><br />
-          <ui5-button ref={this.switch} click={() => this.buttonClick}>Hello!</ui5-button><br />
+          <ui5-button ref={this.switch} click={this.buttonClick}>Hello!</ui5-button><br />
           <br />
           <ui5-label>This is a UI5 Tree</ui5-label><br /><br />
           <ui5-tree id="myTree" class="full-width">
