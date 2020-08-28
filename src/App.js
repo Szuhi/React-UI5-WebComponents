@@ -9,6 +9,7 @@ import "@ui5/webcomponents/dist/Title";
 import "@ui5/webcomponents/dist/Toast";
 import "@ui5/webcomponents/dist/Table.js";
 import "@ui5/webcomponents/dist/TableColumn.js";
+import "@ui5/webcomponents/dist/MultiComboBox";
 
 class App extends Component {
   constructor (props) {
@@ -77,6 +78,22 @@ class App extends Component {
           </ui5-tree>
 
           <br /><br />
+          <ui5-label>UI5 Multi Combo Box</ui5-label>
+          <br /><br />
+          <ui5-multi-combobox placeholder="Choose your countries">
+            <ui5-mcb-item selected text="Argentina"></ui5-mcb-item>
+            <ui5-mcb-item text="Bulgaria"></ui5-mcb-item>
+            <ui5-mcb-item text="Denmark"></ui5-mcb-item>
+            <ui5-mcb-item text="England"></ui5-mcb-item>
+            <ui5-mcb-item text="Albania"></ui5-mcb-item>
+            <ui5-mcb-item text="Morocco"></ui5-mcb-item>
+            <ui5-mcb-item text="Portugal"></ui5-mcb-item>
+            <ui5-mcb-item text="Germany"></ui5-mcb-item>
+            <ui5-mcb-item text="Philippines"></ui5-mcb-item>
+            <ui5-mcb-item text="Paraguay"></ui5-mcb-item>
+          </ui5-multi-combobox>
+
+          <br /><br />
           <ui5-label>UI5 Table</ui5-label>
           <br /><br />
           <ui5-table class="demo-table" id="table" no-data-text="No Data" show-no-data>
@@ -103,7 +120,7 @@ class App extends Component {
 
           <br /><br />
           <button onClick={this.buttonClick}>Fire Toast</button>
-          <ui5-toast id="wcToastBasic">UI5 toast message</ui5-toast>
+          <ui5-toast id="wcToastBasic">UI5 Toast Message</ui5-toast>
         </div>
       </div>
     );
