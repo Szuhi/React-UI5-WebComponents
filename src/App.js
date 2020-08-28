@@ -31,7 +31,6 @@ class App extends Component {
   render () {
     return (
       <div className="App">
-        <button onClick={this.buttonClick}>Asd</button>
         <div>
           <ui5-title level="H2">UI5 Web Components, React demo application.</ui5-title>
         </div>
@@ -63,8 +62,9 @@ class App extends Component {
             <ui5-tree-item expanded text="Tree 3 (no icon)">
             </ui5-tree-item>
           </ui5-tree>
-
-          <ui5-toast id="wcToastBasic">This is a toast</ui5-toast>
+          <br /><br />
+          <button onClick={this.buttonClick}>Fire Toast</button>
+          <ui5-toast id="wcToastBasic">UI5 toast message</ui5-toast>
         </div>
       </div>
     );
