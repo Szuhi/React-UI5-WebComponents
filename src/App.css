@@ -1,6 +1,12 @@
 .App {
   text-align: left;
   margin: auto;
+  width: 100%;
+}
+
+.Page {
+  text-align: left;
+  margin: auto;
   width: 80%;
   padding: 20px;
 }
